@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="nav-bar">
+            <div class="nav-logo" onclick="reload()"></div>
+
+            <div class="nav-items">
+                <ul>
+                    <li class="nav-links" id="Sports" onclick="onClickNavItem('ipl')">Sports</li>
+                    <li class="nav-links" id="Finance" onclick="onClickNavItem('Finance')">Finance</li>
+                    <li class="nav-links" id="Politics" onclick="onClickNavItem('Politics')">Politics</li>
+                    <li class="nav-links" id="Technology" onclick="onClickNavItem('Technology')">Technology</li>
+                </ul>
+            </div>
+
+            <div class="nav-search">
+                <input id="search-box" class="search-box" type="text" placeholder="eg:science">
+                <button id="search-button" class="search-button">Search</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="news-section" id="news-section">
+        </div>
+    </main>
+
+
+    <template id="news-section-template">
+        <div class="box">
+            <img class="news-image" id="news-image" src="https://via.placeholder.com/400x200">
+            <div class="box-content">
+                <h3 class="news-title" id="news-title">This is the title</h2>
+                    <h6 class="news-source" id="news-source">The Hindu 22/05/2024</h6>
+                    <P class="news-description" id="news-description">Lorem ipsum dolor sit, amet consectetur
+                        adipisicing elit. Quasi doloremque expedita nam
+                        asperiores! Maxime aperiam ullam dicta nobis nemo optio vel aliquam autem provident eius enim
+                        nesciunt maiores, dolore dignissimos unde delectus dolores ducimus soluta mollitia vitae illo!
+                        Cupiditate, maiores.</P>
+            </div>
+        </div>
+    </template>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
